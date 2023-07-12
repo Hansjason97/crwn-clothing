@@ -22,7 +22,7 @@
         @apply w-full flex flex-wrap flex-row justify-between;
     }
     .menu-item {
-        @apply w-fit min-w-[30%] h-[240px] flex-auto flex items-center justify-center border border-black my-0 mx-[7.5px] mb-[15px] bg-center bg-cover;
+        @apply w-fit min-w-[30%] flex-auto flex items-center justify-center border border-black my-0 mx-[7.5px] mb-[15px] bg-center bg-cover;
     }
     .menu-item:first-child {
         @apply mr-[7.5px];
