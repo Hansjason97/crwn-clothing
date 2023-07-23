@@ -8,6 +8,9 @@
     html {
         scroll-behavior:smooth;
     }
+    body{
+        @apply py-5 px-14;
+    }
     h1 {
         @apply text-3xl md:text-4xl lg:text-5xl font-bold;
     }
@@ -43,6 +46,30 @@
     }
     .subtitle {
         @apply font-light text-base;
+    }
+    .previewCollection{
+        @apply flex flex-col mb-8;
+    }
+    .previewTitle{
+        @apply text-[28px] mb-6;
+    }
+    .preview{
+        @apply flex justify-between;
+    }
+    .collectionItem{
+        @apply w-[22%] flex flex-col h-[350px] items-center;
+    }
+    .collectionImage{
+        @apply w-full h-[95%] bg-cover bg-center mb-[5px];
+    }
+    .collectionFooter{
+        @apply w-full h-[5%] flex justify-between text-[18px];
+    }
+    .collectionName{
+        @apply w-[90%] mb-[15px];
+    }
+    .collectionPrice{
+        @apply w-[10%];
     }
 
 }
