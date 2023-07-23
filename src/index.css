@@ -8,6 +8,15 @@
     html {
         scroll-behavior:smooth;
     }
+    ::-webkit-scrollbar{
+        @apply w-2;
+      }
+      ::-webkit-scrollbar-track{
+        @apply bg-transparent h-fit;
+      }
+      ::-webkit-scrollbar-thumb{
+        @apply bg-slate-400;
+      }
     body{
         @apply py-5 px-14;
     }
@@ -70,6 +79,18 @@
     }
     .collectionPrice{
         @apply w-[10%];
+    }
+    .header {
+        @apply h-[70px] w-full flex justify-between mb-6;
+    }
+    .logoContainer{
+        @apply h-full w-[70px] p-6;
+    }
+    .options{
+        @apply w-[50%] h-full flex items-center justify-end;
+    }
+    .option {
+        @apply px-[15px] py-[10px] uppercase tracking-widest font-open;
     }
 
 }
