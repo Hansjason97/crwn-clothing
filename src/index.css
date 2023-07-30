@@ -18,10 +18,19 @@
         @apply bg-slate-400;
       }
     body{
-        @apply py-5 px-14;
+        @apply py-5 px-14 text-base;
     }
     h1 {
         @apply text-3xl md:text-4xl lg:text-5xl font-bold;
+    }
+    h2 {
+        @apply text-2xl md:text-3xl lg:text-4xl font-bold mb-8;
+    }
+    input[type='password']{
+        @apply tracking-[0.3em];
+    }
+    button {
+        @apply capitalize;
     }
 }
 
@@ -90,7 +99,32 @@
         @apply w-[50%] h-full flex items-center justify-end;
     }
     .option {
-        @apply px-[15px] py-[10px] uppercase tracking-widest font-open;
+        @apply px-[15px] py-[10px] uppercase tracking-widest font-open cursor-pointer;
+    }
+    .formGroup{
+        @apply relative ;
+    }
+    .formInput{
+        @apply text-slate-600 text-[18px] py-[10px] pl-[5px] pr-[10px] w-full border-b border-b-slate-600 my-6 
+        focus:outline-none;
+    }
+    .formInputLabel{
+        @apply text-slate-600 text-base absolute pointer-events-none left-[5px] top-[10px] transition-all duration-300 ease-linear capitalize
+         focus:top-[-14px] focus:text-xs focus:text-slate-900;
+    }
+    .formInputLabel.shrink{
+        @apply top-[0px] text-xs text-slate-800;
+    }
+    .signIn{
+        @apply w-[380px] flex flex-col;
+    }
+    .customButton{
+        @apply min-w-[165px] w-fit h-[50px] tracking-[0.5px] leading-[50px] px-9 py-0 text-[15px] bg-slate-900 text-slate-50 
+        uppercase font-open cursor-pointer
+        hover:bg-slate-50 hover:text-slate-900 hover:border hover:border-slate-900 ;
+    }
+    .buttons{
+        @apply flex justify-between;
     }
 
 }
