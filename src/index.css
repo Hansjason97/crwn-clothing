@@ -115,8 +115,11 @@
     .formInputLabel.shrink{
         @apply top-[0px] text-xs text-slate-800;
     }
+    .signInSignUp{
+        @apply mx-auto w-fit flex flex-col justify-center lg:w-[1024px] lg:flex-row lg:justify-between;
+    }
     .signIn{
-        @apply w-[380px] flex flex-col;
+        @apply max-w-[380px] flex flex-col;
     }
     .customButton{
         @apply min-w-[165px] w-fit h-[50px] tracking-[0.5px] leading-[50px] px-9 py-0 text-[15px] bg-slate-900 text-slate-50 
@@ -124,7 +127,7 @@
         hover:bg-slate-50 hover:text-slate-900 hover:border hover:border-slate-900 ;
     }
     .buttons{
-        @apply flex justify-between;
+        @apply flex flex-col sm:flex-row sm:justify-between;
     }
 
 }
