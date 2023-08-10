@@ -129,5 +129,20 @@
     .buttons{
         @apply flex flex-col sm:flex-row sm:justify-between;
     }
+    .cart-icon {
+        @apply w-[45px] h-[45px] relative flex justify-center items-center cursor-pointer;
+    }
+    .shopping-icon{
+        @apply w-[24px] h-[24px];
+    }
+    .item-count{
+        @apply absolute text-xs font-bold bottom-3;
+    }
+    .cart-dropdown{
+        @apply absolute w-[240px] max-h-[340px] flex flex-col p-5 border border-black bg-white top-[90px] right-[40px] z-[5];
+    }
+    .cart-items{
+        @apply max-h-[240px] flex flex-col overflow-scroll;
+    }
 
 }
